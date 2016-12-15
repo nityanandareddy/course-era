@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html ng-app="myFirstAp">
+<html ng-app="firsrModule">
   <head>
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
+    <script src="main.js"></script>
+    <style>
+    body{font-size: 1.8em;}
+    </style>
     <title>hello era</title>
   </head>
   <body>
     <h1>Hiiii every one !!! its intresting.Its my angularjs app.</h1>
-    <div ng-controller="myFisrtController">
+    <h1>Name Calculator</h1>
+    <div ng-controller="nameCalculatorController">
+      NAME:<input type="text" ng-model="name" ng-keyup="displayNumaric()"></input>
+      <div>Total numberi valuve:{{totalvalue}}</div>
       {{name}}
-      <input type="text" ng-model="name"></input>
-      {{sayHello()}}
     </div>
   </body>
 </html>
