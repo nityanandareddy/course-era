@@ -8,6 +8,6 @@
     $scope.sayHello = function()
     {
       return "hellow.";
-    }
+    };
   });
 })()
